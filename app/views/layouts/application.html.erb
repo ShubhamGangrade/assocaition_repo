@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Association</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= link_to "Home", root_path %>
+    <span style="margin-left: 1em;"><%= link_to "Create New Article", new_article_path %></span>
+    <span style="margin-left: 1em;"><%= link_to "New Author", new_author_path %></span>
+    <span style="margin-left: 1em;"><%= link_to "Author's List", authors_path %></span>
+    
+
+    <%= yield %>
+  </body>
+</html>
